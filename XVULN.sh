@@ -33,7 +33,7 @@ do
             echo CHECK TCP OPEN PORT
             echo IP:
             read IP
-            echo "Port ( -p- = for all port or StartPort-FinPort)"
+            echo "Port (StartPort-FinPort)"
             read port
             nmap -sT -p $port $IP
             ;;
@@ -42,7 +42,7 @@ do
             echo CHECK UDP OPEN PORT
             echo IP:
             read IP
-            echo "Port ( - = for all port or StartPort-FinPort)"
+            echo "Port (StartPort-FinPort)"
             read port
             nmap -sU -p $port $IP
             ;;
@@ -51,7 +51,7 @@ do
             echo CHECK SYN OPEN PORT
             echo IP:
             read IP
-            echo "Port ( -p- = for all port or StartPort-FinPort)"
+            echo "Port (StartPort-FinPort)"
             read port
             nmap -sS -p $port $IP
             ;;
